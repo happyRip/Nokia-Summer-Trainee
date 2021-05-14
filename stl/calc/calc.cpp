@@ -5,6 +5,8 @@
 #include <string>
 #include <stack>
 
+// source: https://en.wikipedia.org/wiki/Reverse_Polish_notation
+
 bool isNumber(char character[]);
 bool isOperator(char character[]);
 
