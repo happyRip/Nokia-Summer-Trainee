@@ -1,7 +1,7 @@
-#include "iterator.h"
-#include <cstdlib>
+#include "../include/iterator.h"
 #include <algorithm>
 #include <iostream>
+#include <cstdlib>
 
 Container::Container(int s) {
     size = s;
@@ -11,7 +11,6 @@ Container::Container(int s) {
 Container::Container(int s, int d[]) {
     size = s;
     data = new int[size];
-    /* data = d; */
     std::copy(d, d+size, data);
 }
 
@@ -32,23 +31,3 @@ int Container::getSize() {
 int* Container::getData() {
     return data;
 } 
-
-/* TaskList::TaskList() { */
-/*     size = 10; */
-/* } */
-
-/* TaskList::ArrayIterator::ArrayIterator() { */
-/*     index = 0; */
-/* } */
-
-/* bool TaskList::ArrayIterator::hasNext() { */
-/*     return index < size; */
-/* } */
-
-/* std::string TaskList::ArrayIterator::current() { */
-/*     return taskList[index]; */
-/* } */
-
-/* void TaskList::ArrayIterator::next() { */
-/*     ++index; */
-/* } */
