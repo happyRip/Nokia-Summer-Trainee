@@ -1,4 +1,7 @@
 #include "iterator.h"
+#include <cstdlib>
+#include <algorithm>
+#include <iostream>
 
 Container::Container(int s) {
     size = s;
@@ -8,8 +11,11 @@ Container::Container(int s) {
 Container::Container(int s, int d[]) {
     size = s;
     data = new int[size];
-    data = d;
+    /* data = d; */
+    std::copy(d, d+size, data);
 }
+
+Container::~Container() { delete[] data; }
 
 Container::Iterator Container::begin() {
     return Iterator(&data[0]);

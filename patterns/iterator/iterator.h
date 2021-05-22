@@ -11,6 +11,8 @@ class Container {
         Container(int s);
         Container(int s, int d[]);
 
+        ~Container();
+
         struct Iterator {
             using iterator_category = std::forward_iterator_tag;
             using difference_type = std::ptrdiff_t;
@@ -39,34 +41,3 @@ class Container {
         int getSize();
         int* getData();
 };
-
-/* class Iterator */
-/* { */
-/*     public: */
-/*         virtual bool hasNext(); */
-/*         virtual std::string current(); */
-/*         virtual void next(); */
-/* }; */
-
-/* class TaskList */
-/* { */
-/*     protected: */
-/*         int size; */
-/*         std::string taskList[10]; */
-
-/*     public: */
-/*         TaskList(); */
-/*         Iterator createIterator(); */
-
-/*     class ArrayIterator: Iterator */
-/*     { */
-/*         private: */
-/*             int index; */
-
-/*         public: */
-/*             ArrayIterator(); */
-/*             bool hasNext() override; */
-/*             std::string current() override; */
-/*             void next() override; */
-/*     }; */
-/* }; */

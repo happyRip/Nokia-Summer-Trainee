@@ -2,7 +2,7 @@
 #include "iterator.h"
 
 int main(){
-    int array[10] = {2,1,3,7,2,1,1,5,6,9};
+    int array[10] = {9,8,7,6,5,4,3,2,1,0};
     Container c(10, array);
 
     for (auto i : c)
