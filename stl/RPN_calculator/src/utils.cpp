@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "../include/utils.h"
 
 bool isNumber(char character[]) {
     for (int i = 0; character[i] != 0; i++) {

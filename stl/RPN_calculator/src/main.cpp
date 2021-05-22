@@ -1,10 +1,10 @@
-#include <cstdlib>
+#include "../include/utils.h"
+#include "../include/calc.h"
 #include <iostream>
 #include <stdlib.h>
+#include <cstdlib>
 #include <string>
 #include <stack>
-#include "utils/utils.h"
-#include "calc/calc.h"
 
 int main(int argc, char** argv)
 {

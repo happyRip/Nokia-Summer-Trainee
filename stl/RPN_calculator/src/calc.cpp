@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "../include/calc.h"
 
 // source: https://en.wikipedia.org/wiki/Reverse_Polish_notation
 
