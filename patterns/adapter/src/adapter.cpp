@@ -1,5 +1,9 @@
-#include "adapter.h"
+#include "../include/adapter.h"
 #include <string>
+
+std::string Target::Request() {
+    return "foo";
+}
 
 Adaptee::Adaptee() {
     value_ = 0;

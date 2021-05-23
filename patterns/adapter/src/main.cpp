@@ -1,4 +1,4 @@
-#include "adapter.h"
+#include "../include/adapter.h"
 
 int main() {
     Target *target = new Target;

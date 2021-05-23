@@ -5,9 +5,7 @@ class Target {
     public:
         virtual ~Target() = default;
 
-        virtual std::string Request() {
-            return "foo";
-        }
+        virtual std::string Request();
 };
 
 class Adaptee {
