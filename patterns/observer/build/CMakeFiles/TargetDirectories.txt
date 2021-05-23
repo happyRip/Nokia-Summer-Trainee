@@ -1,3 +1,0 @@
-/home/arrr/Documents/GitHub/Nokia-Summer-Trainee/patterns/observer/build/CMakeFiles/rebuild_cache.dir
-/home/arrr/Documents/GitHub/Nokia-Summer-Trainee/patterns/observer/build/CMakeFiles/edit_cache.dir
-/home/arrr/Documents/GitHub/Nokia-Summer-Trainee/patterns/observer/build/CMakeFiles/observer.dir
