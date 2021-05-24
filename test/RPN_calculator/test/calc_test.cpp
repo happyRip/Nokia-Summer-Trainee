@@ -1,6 +1,7 @@
 #include "../include/utils.hpp"
 #include "../include/calc.hpp"
 #include <gtest/gtest.h>
+#include <string>
 
 TEST(calc_test, isNumber) {
     char aNumber[4] = {'7', '7', '7', '\0'};

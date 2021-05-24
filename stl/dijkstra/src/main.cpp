@@ -1,4 +1,4 @@
-#include "graph.h"
+#include "../include/graph.hpp"
 #include <vector>
 
 int main() {
@@ -24,4 +24,11 @@ int main() {
     /* graph.addEdge(5, 3, 1); */
 
     graph.shortestPath(0);
+
+    for (int i = 0; i < graph.getSize(); i++) {
+        std::cout << i 
+            << ":\n\tdistance = " <<  graph.getDistance(i) 
+            << "\n\tprevious = " << graph.getPrevious(i) 
+            << std::endl;
+    }
 }

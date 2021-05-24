@@ -1,4 +1,4 @@
-#include "graph.h"
+#include "../include/graph.hpp"
 #include <functional>
 #include <iostream>
 #include <iterator>
@@ -29,12 +29,12 @@ void Graph::printAdjList() {
 
 void Graph::shortestPath(int start) {
     std::priority_queue<Pii, Vii, std::greater<Pii>> Q;
-    int distance[adjList.size()], previous[adjList.size()];
 
-    for (int i = 0; i < adjList.size(); i++) {
-        distance[i] = INT_MAX;
-        previous[i] = INT_MIN;
-    }
+    distance.resize(adjList.size());
+    std::fill(distance.begin(), distance.end(), INT_MAX);
+
+    previous.resize(adjList.size());
+    std::fill(previous.begin(), previous.end(), INT_MIN);
 
     distance[start] = 0;
     previous[start] = start;
@@ -58,10 +58,28 @@ void Graph::shortestPath(int start) {
             }
         }
     }
+}
 
-    for (int i = 0; i < adjList.size(); i++) {
-        std::cout << i << ": " 
-            << distance[i] << ", " 
-            << previous[i] << std::endl;
-    }
+int Graph::getSize() {
+    return adjList.size();
+}
+
+std::vector<int> Graph::getDistance() {
+    return distance;
+}
+
+int Graph::getDistance(int node) {
+    if (node >= distance.size())
+        return INT_MAX;
+    return distance[node];
+}
+
+std::vector<int> Graph::getPrevious() {
+    return previous;
+}
+
+int Graph::getPrevious(int node) {
+    if (node >= previous.size())
+        return INT_MAX;
+    return previous[node];
 }

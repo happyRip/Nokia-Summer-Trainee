@@ -1,5 +1,5 @@
-#include "../include/utils.h"
-#include "../include/calc.h"
+#include "../include/utils.hpp"
+#include "../include/calc.hpp"
 #include <iostream>
 #include <stdlib.h>
 #include <cstdlib>

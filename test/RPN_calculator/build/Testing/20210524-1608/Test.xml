@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="3593"
 	>
 	<Testing>
-		<StartDateTime>May 24 18:15 Central European Daylight Time</StartDateTime>
-		<StartTestTime>1621872950</StartTestTime>
+		<StartDateTime>May 24 19:08 Central European Daylight Time</StartDateTime>
+		<StartTestTime>1621876083</StartTestTime>
 		<TestList>
 			<Test>./test/calc-test</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\aborb\Documents\GitHub\Nokia-Summer-Trainee\test\RPN_calculator\build\test\Debug\calc-test.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0329098</Value>
+					<Value>0.0332113</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -55,8 +55,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 24 18:15 Central European Daylight Time</EndDateTime>
-		<EndTestTime>1621872950</EndTestTime>
+		<EndDateTime>May 24 19:08 Central European Daylight Time</EndDateTime>
+		<EndTestTime>1621876083</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -1,4 +1,4 @@
-#include "../include/adapter.h"
+#include "../include/adapter.hpp"
 
 int main() {
     Target *target = new Target;
@@ -6,6 +6,6 @@ int main() {
     Adapter *adapter = new Adapter(adaptee);
     Client *client = new Client;
 
-    client->printString(target->Request());
-    client->printString(adapter->Request());
+    client  ->  printString(target -> Request());
+    client -> printString(adapter -> Request());
 }
