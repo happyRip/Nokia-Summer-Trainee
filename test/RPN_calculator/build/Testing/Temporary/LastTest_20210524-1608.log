@@ -1,0 +1,31 @@
+Start testing: May 24 18:15 Central European Daylight Time
+----------------------------------------------------------
+1/1 Testing: calc-test
+1/1 Test: calc-test
+Command: "C:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/RPN_calculator/build/test/Debug/calc-test.exe"
+Directory: C:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/RPN_calculator/build/test
+"calc-test" start time: May 24 18:15 Central European Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\aborb\Documents\GitHub\Nokia-Summer-Trainee\test\RPN_calculator\googletest\googletest\src\gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from calc_test
+[ RUN      ] calc_test.isNumber
+[       OK ] calc_test.isNumber (0 ms)
+[ RUN      ] calc_test.isOperator
+[       OK ] calc_test.isOperator (0 ms)
+[----------] 2 tests from calc_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"calc-test" end time: May 24 18:15 Central European Daylight Time
+"calc-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 24 18:15 Central European Daylight Time

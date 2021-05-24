@@ -1,0 +1,10 @@
+^C:\USERS\ABORB\DOCUMENTS\GITHUB\NOKIA-SUMMER-TRAINEE\TEST\EXAMPLE\TEST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/Example -BC:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/Example/build --check-stamp-file C:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/Example/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

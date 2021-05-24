@@ -1,0 +1,10 @@
+^C:\USERS\ABORB\DOCUMENTS\GITHUB\NOKIA-SUMMER-TRAINEE\TEST\RPN_CALCULATOR\BUILD\CMAKEFILES\45D12CD01760292B0762CFC16E35E6EA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/RPN_calculator -BC:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/RPN_calculator/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/aborb/Documents/GitHub/Nokia-Summer-Trainee/test/RPN_calculator/build/calc.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
