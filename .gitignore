@@ -31,7 +31,6 @@
 *.out
 *.app
 
-# Build folders
+# Build and test folders
 **/**/build
 **/**/googletest
-**/**/ggoogletest
