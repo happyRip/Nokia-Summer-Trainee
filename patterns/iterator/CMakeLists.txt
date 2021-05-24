@@ -3,9 +3,6 @@ project(iterator)
 
 include_directories(include)
 
-set(SRC
-    src/main.cpp
-    src/iterator.cpp
-)
+file(GLOB SOURCES "./src/*.cpp")
 
-add_executable(${PROJECT_NAME} ${SRC})
+add_executable(${PROJECT_NAME} ${SOURCES})
