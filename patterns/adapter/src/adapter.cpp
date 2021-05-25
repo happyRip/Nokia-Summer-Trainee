@@ -1,5 +1,5 @@
 #include "../include/adapter.hpp"
-#include <string>
+#include <cstdio>
 
 std::string Target::Request() {
     return "foo";
@@ -31,5 +31,5 @@ std::string Adapter::Request() {
 }
 
 void Client::printString(std::string message) {
-    std::cout << message << std::endl;
+    printf("%s\n", message.c_str());
 }
